@@ -37,7 +37,7 @@ class ChirpPolicy
      */
     public function update(User $user, Chirp $chirp): bool
     {
-        return $chirp->user()->is($user);
+        return $chirp->user()->is($user); // Compare the chirp's user to the current user
     }
 
     /**
@@ -45,7 +45,7 @@ class ChirpPolicy
      */
     public function delete(User $user, Chirp $chirp): bool
     {
-        //
+        return $this->update($user, $chirp); // Reuse the update() method logic
     }
 
     /**
