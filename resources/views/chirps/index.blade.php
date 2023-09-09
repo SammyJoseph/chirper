@@ -1,5 +1,7 @@
 <x-app-layout>
     <div class="max-w-2xl mx-auto p-4 sm:p-6 lg:p-8">
+        @include('chirps._partials.session-info')
+
         <form action="{{ route('chirps.store') }}" method="POST">
             @csrf
             <textarea name="message" placeholder="{{ __('What\'s on your mind?') }}"
