@@ -1,6 +1,6 @@
 @if (session()->has('message'))
     <div id="toast-default"
-    class="fixed top-2 right-4 sm:right-6 lg:right-8 flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
+    class="fixed top-2 left-4 sm:left-6 lg:left-8 flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
     role="alert">
     <div
         class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-blue-500 bg-blue-100 rounded-lg dark:bg-blue-800 dark:text-blue-200">
